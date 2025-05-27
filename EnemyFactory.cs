@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Comando
 {
-    internal class EnemyFactory
+    public class EnemyFactory
     {
+        List<Enemy> Listenemy = new List<Enemy>();
+
+        public void CreateEnemy(string name, bool status)
+        {
+            Enemy enemy = new Enemy(name, status);
+            Listenemy.Add(enemy);
+        }
     }
 }
