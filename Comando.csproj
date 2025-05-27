@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="commandos\AirComando.cs" />
+    <Compile Include="commandos\SeaCommando.cs" />
     <Compile Include="Enemy.cs" />
-    <Compile Include="Commando.cs" />
+    <Compile Include="commandos\Commando.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Weapon.cs" />

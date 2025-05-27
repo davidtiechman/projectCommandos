@@ -10,14 +10,13 @@ namespace Comando
     {
         private string Name;
         public string CodeName { get; set; }
-        public string[] ArryaTools;
+        public string[] ArryaTools = new string[] {"Hammer", "Chisel", "Rope", "Bag", "Bottle"};
         public string Status;
         public Commando(string name, string codename, string status)
         {
             this.Name = name;
             this.CodeName = codename;
             this.Status = status;
-            this.ArryaTools = new string[] {"Hammer", "Chisel", "Rope", "Bag", "Bottle"};
             
         }
 
@@ -32,7 +31,7 @@ namespace Comando
             this.Status = "Hiding";
             Console.WriteLine(Status);
         }
-        public void Attack()
+        public virtual void Attack()
         {
             Console.WriteLine($"The commando named {this.Name} is attacking now");
         }

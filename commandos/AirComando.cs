@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Comando.commandos
 {
-    internal class Aircomando
+    public class AirComando : Commando
     {
+        public AirComando(string name, string codename, string status) :base(name, codename, status) { }
+
+        public void Parachuting()
+        {
+            Console.WriteLine("The aircommando is parachuting");
+        }
+        public override void Attack()
+        {
+            Console.WriteLine($"The aircommando named is attacking now");
+        }
+
     }
 }

@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Comando.commandos
 {
-    internal class Sececommando
+    public class SeaCommando : Commando
     {
+        public SeaCommando(string name, string codename, string status) : base (name, codename, status) { }
+    public void Swimming()
+        {
+            Console.WriteLine("The seacommando is swimming");
+        }
+        public override void Attack()
+        {
+            Console.WriteLine($"The saecommando is attacking now");
+        }
     }
 }
