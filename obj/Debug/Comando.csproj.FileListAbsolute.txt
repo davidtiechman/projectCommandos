@@ -1,0 +1,7 @@
+C:\Users\This_user\source\repos\Comando\bin\Debug\Comando.exe.config
+C:\Users\This_user\source\repos\Comando\bin\Debug\Comando.exe
+C:\Users\This_user\source\repos\Comando\bin\Debug\Comando.pdb
+C:\Users\This_user\source\repos\Comando\obj\Debug\Comando.csproj.AssemblyReference.cache
+C:\Users\This_user\source\repos\Comando\obj\Debug\Comando.csproj.CoreCompileInputs.cache
+C:\Users\This_user\source\repos\Comando\obj\Debug\Comando.exe
+C:\Users\This_user\source\repos\Comando\obj\Debug\Comando.pdb
