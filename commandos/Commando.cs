@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Comando
 {
-    public class Commado
+    public class Commando
     {
-        public string Name;
-        public string CodeName;
+        private string Name;
+        public string CodeName { get; set; }
         public string[] ArryaTools;
         public string Status;
-        public Commado(string name, string codename, string status)
+        public Commando(string name, string codename, string status)
         {
             this.Name = name;
             this.CodeName = codename;
@@ -36,5 +36,21 @@ namespace Comando
         {
             Console.WriteLine($"The commando named {this.Name} is attacking now");
         }
+        public void GetName()
+        {
+            Console.WriteLine(this.Name);
+        }
+        public void SetName(string newname)
+        {
+            this.Name = newname;
+        }
+        public void SayNane(string commanderRank)
+        {
+            if (commanderRank == "GENERAL") Console.WriteLine(this.Name);
+            else if (commanderRank == "COLONEL") Console.WriteLine(this.CodeName);
+            else  Console.WriteLine("The infromation is classified");
+            
+        }
     }
+
 }
