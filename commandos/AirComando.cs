@@ -16,7 +16,7 @@ namespace Comando.commandos
         }
         public override void Attack()
         {
-            Console.WriteLine($"The aircommando named is attacking now");
+            Console.WriteLine($"The aircommando is attacking now");
         }
 
     }
