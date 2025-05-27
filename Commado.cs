@@ -20,5 +20,21 @@ namespace Comando
             this.ArryaTools = new string[] {"Hammer", "Chisel", "Rope", "Bag", "Bottle"};
             
         }
+
+        public void Walk()
+        {
+            this.Status = "Walking";
+            Console.WriteLine(Status);
+        }
+
+        public void Hide()
+        { 
+            this.Status = "Hiding";
+            Console.WriteLine(Status);
+        }
+        public void Attack()
+        {
+            Console.WriteLine($"The commando named {this.Name} is attacking now");
+        }
     }
 }
